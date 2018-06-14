@@ -12,7 +12,7 @@ import org.junit.Test;
  * Created by erdtman on 2018-06-12.
  */
 
-public class CanonicalizationTests
+public class TestCanonicalization
 {
   private static String INPUT_DIR = "src/test/resources/input/";
   private static String OUTPUT_DIR = "src/test/resources/output/";
