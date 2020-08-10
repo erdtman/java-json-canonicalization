@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/erdtman/java-json-canonicalization.svg?branch=master)](https://travis-ci.org/erdtman/java-json-canonicalization)
+[![Build Status](https://travis-ci.com/erdtman/java-json-canonicalization.svg?branch=master)](https://travis-ci.com/erdtman/java-json-canonicalization)
 [![Coverage Status](https://coveralls.io/repos/github/erdtman/java-json-canonicalization/badge.svg)](https://coveralls.io/github/erdtman/java-json-canonicalization)
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.erdtman/java-json-canonicalization.svg?label=Maven%20Central)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.github.erdtman%22%20a%3A%22java-json-canonicalization%22)
 # java-json-canonicalization
