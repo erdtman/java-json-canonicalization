@@ -42,40 +42,40 @@ System.out.println(jc.getEncodedString());
 <dependency>
   <groupId>io.github.erdtman</groupId>
   <artifactId>java-json-canonicalization</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
 </dependency>
 ```
 ### Gradle Groovy DSL
 ```
-compile 'io.github.erdtman:java-json-canonicalization:1.0'
+compile 'io.github.erdtman:java-json-canonicalization:1.1'
 ```
 ### Gradle Kotlin DSL
 ```
-compile(group = "io.github.erdtman", name = "java-json-canonicalization", version = "1.0")
+compile(group = "io.github.erdtman", name = "java-json-canonicalization", version = "1.1")
 ```
 ### Scala SBT
 ```
-libraryDependencies += "io.github.erdtman" % "java-json-canonicalization" % "1.0"
+libraryDependencies += "io.github.erdtman" % "java-json-canonicalization" % "1.1"
 ```
 ### Apache Ivy
 ```xml
-<dependency org="io.github.erdtman" name="java-json-canonicalization" rev="1.0" />
+<dependency org="io.github.erdtman" name="java-json-canonicalization" rev="1.1" />
 ```
 ### Groovy Grape
 ```
 @Grapes(
-  @Grab(group='io.github.erdtman', module='java-json-canonicalization', version='1.0')
+  @Grab(group='io.github.erdtman', module='java-json-canonicalization', version='1.1')
 )
 ```
 ### Leiningen
 ```
-[io.github.erdtman/java-json-canonicalization "1.0"]
+[io.github.erdtman/java-json-canonicalization "1.1"]
 ```
 ### Apache Buildr
 ```
-'io.github.erdtman:java-json-canonicalization:jar:1.0'
+'io.github.erdtman:java-json-canonicalization:jar:1.1'
 ```
 ### PURL
 ```
-pkg:maven/io.github.erdtman/java-json-canonicalization@1.0
+pkg:maven/io.github.erdtman/java-json-canonicalization@1.1
 ```
