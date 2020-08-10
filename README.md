@@ -4,18 +4,37 @@
 # java-json-canonicalization
 Java JSON canonicalization 
 JSON canonicalize implementation. Creates crypto safe predictable canocalization of
-JSON as defined by [draft-rundgren-json-canonicalization-scheme](https://cyberphone.github.io/doc/security/draft-rundgren-json-canonicalization-scheme.html)
+JSON as defined by [RFC8785](https://tools.ietf.org/html/rfc8785)
 ## Usage
+### Example JSON
+#### Normal
+```json
+{
+  "from_account": "543 232 625-3",
+  "to_account": "321 567 636-4",
+  "amount": 500,
+  "currency": "USD"
+}
+```
+#### Crazy
+```json
+{
+  "1": {"f": {"f":  "hi","F":  5} ,"\n":  56.0},
+  "10": { },
+  "":  "empty",
+  "a": { },
+  "111": [ {"e":  "yes","E":  "no" } ],
+  "A": { }
+}
+```
 ### Java
 ```java
-String json = "" +
-"{\"\": \"empty\"," +
-  "\"a\": { }," +
-  "\"111\": [ {\"e\": \"yes\",\"E\": \"no\" } ]," +
-  "\"A\": {\"b\": \"123\"}}";
-JsonCanonicalizer jsonCanonicalizer = new JsonCanonicalizer(json);
-String canonicalizedJson = jsonCanonicalizer.getEncodedString();
-System.out.println(canonicalizedJson);
+String json = new String(Files.readAllBytes(Paths.get("filename.json")));
+JsonCanonicalizer jc = new JsonCanonicalizer(json);
+System.out.println(jc.getEncodedString());
+
+// output normal: {"amount":500,"currency":"USD","from_account":"543 232 625-3","to_account":"321 567 636-4"}
+// output crazy: {"":"empty","1":{"\n":56,"f":{"F":5,"f":"hi"}},"10":{},"111":[{"E":"no","e":"yes"}],"A":{},"a":{}}
 ```
 ## Install
 ### Apache Maven
