@@ -1,5 +1,5 @@
 language: java
-jdk: oraclejdk10
+jdk: oraclejdk12
 install: true
 script:
   - mvn clean test jacoco:report
